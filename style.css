@@ -1,0 +1,140 @@
+/* Profile card css */
+ /* Table of contents */
+/* 
+1.0 Reset
+2.0 Body
+3.0 Profile Card
+    3.1 Card Header
+    3.2 Card Body
+    3.3 profile-footer
+
+*/
+
+
+
+/* 1.0 Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+/* Background */
+
+body{
+    font-family: 'Poppins';
+    color: #141414;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg), #19a1ad;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 55vw bottom 35vh, left 55vw top 35vh;        
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        
+}
+
+/* 3.0 Profile Card */
+.profile-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 7px;
+    /* background-color: #fff; */
+}
+
+
+/* 3.1 Card Header */
+.profile-card-header, 
+.profile-card-header img{
+    display: block;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+/* 3.2 Card Body */
+.profile-card-body{
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.profile-image img{
+    border-radius: 50%;
+    margin-top: -45px;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.profile-details{
+    padding-top: 0.6rem;
+    border-bottom: 1px solid #78787878;
+}
+
+.profile-details .name{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.profile-details .age{
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.profile-details h4{
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1.6rem;
+}
+
+/* 3.3 profile-footer */
+
+.profile-footer{
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.profile-footer h3{
+    font-weight: 600;
+}
+
+.profile-footer p{
+    font-size: 0.6em;
+    letter-spacing: 2px;
+}
